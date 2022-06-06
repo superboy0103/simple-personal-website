@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Simple Personal Website</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Simple Personal Website</title>
 </head>
+
 <body>
-	<h1>Hello World!</h1>
+    <section class=page>
+        <div class="desktop">
+            <div class="container">
+                <div class="card0">
+                    <div class="front">
+                        <div class="toggle"></div>
+                        <div class="content">
+                            <div class="profile">
+                                <div class="image">
+                                    <img src="assets/avatar.jpg">
+                                </div>
+                                <div class="text">
+                                    <h3>Super Boy
+                                        <br>
+                                        <span>Senior Full stack Dev</span>
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="socials">
+                                <ul class="info">
+                                    <li id="aboutbtn"><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                                    <li><a href="https://github.com/superboy103" target="_blank"><i class="fa fa-github"
+                                                aria-hidden="true"></i></a>
+                                    </li>
+                                    <li id="contact"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                                <div class="tooltip">E-Mail copied</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="backbtn" id="backbtn"></div>
+                        <div class="content" id="contentback">
+                            <div class="text">
+                                <h3>About Me</h3>
+                                <br>
+                                <span>
+                                	Super Boy.<br>
+                                	As a senior Full Stack Developer, I have experienced and strong skills in various JS/PHP frameworks and other dev languages.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
