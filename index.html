@@ -60,6 +60,37 @@
             </div>
         </div>
     </section>
+    <script>
+        const mode = document.querySelector(".page");
+        const toggle = document.querySelector(".toggle");
+        toggle.onclick = function () {
+            mode.classList.toggle('light')
+        }
+
+
+        const contact = document.getElementById("contact");
+        const tooltip = document.querySelector(".tooltip");
+        contact.onclick = function () {
+            tooltip.style.opacity = '1';
+            setTimeout(function () {
+                tooltip.style.opacity = '0';
+            }, 2000);
+            navigator.clipboard.writeText("kevinkluster103@gmail.com");
+        }
+
+
+        const card = document.querySelector(".card0");
+        const about = document.getElementById("aboutbtn");
+        about.onclick = function () {
+            card.className = "card1";
+        }
+
+        const cardd = document.querySelector(".card1");
+        const test = document.getElementById("backbtn");
+        test.onclick = function () {
+            card.className = "card0";
+        }
+    </script>
 </body>
 
 </html>
